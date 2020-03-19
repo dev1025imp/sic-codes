@@ -428,7 +428,7 @@ input:focus {
   }
   .uza-btn.btn-2:focus, .uza-btn.btn-2:hover {
     background-color: rgba(124, 77,158,1);
-    color: rgba(255, 255, 255, 1); }
+    color: RED; }
   .uza-btn.btn-3 {  
     border: 2px solid rgba(124, 77, 158, 1);
     line-height: 46px;
@@ -1519,7 +1519,7 @@ input:focus {
       margin-bottom: 15px;
       display: block; }
       .single-blog-post .post-content .post-title:focus, .single-blog-post .post-content .post-title:hover {
-        color: #1583e9; }
+        color: red; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-blog-post .post-content .post-title {
           font-size: 18px; } }
