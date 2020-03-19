@@ -15,10 +15,32 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+.about-tab-area .nav-tabs .nav-link {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 0 15px 0;
+    border: none;
+    margin-right: 110px;
+    background-color: transparent;} 
+</style>
 
 </head>
 
-<body>
+<body  style="font-size:30px;">
     <!-- Preloader -->
     <div id="preloader">
         <div class="wrapper">
@@ -71,7 +93,7 @@
                         </div>
 
                         <!-- Nav Start -->
-                       <div class="classynav">
+                        <div class="classynav">
                             <ul id="nav">
                                 <li><a href="./team.html">TEAM</a>
                                 <li><a href="./services.html">SERVICES</a>
@@ -92,7 +114,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="./operations.html">OPERATIONS</a>
-                                            <ul class="dropdown">
+                                            <ul class="dropdown dropdown1">
                                                 <li><a href="./business-market-research.html">BUSINESS MARKET RESEARCH</a></li>
                                                 <li><a href="./data-analytics.html">DATA ANALYTICS</a></li>
                                                 <li><a href="./strategy.html">STRATEGY</a></li>
@@ -103,15 +125,15 @@
                                                 <li><a href="./branding-and-frenchise-building.html">BRANDING & FRANCHISING</a></li>
                                                 <li><a href="./events.html">EVENTS</a></li>
                                                 <li><a href="./technical.html">TECHNICAL</a></li>
-                                                <li><a href="./enviroment.html">ENVIROMENT</a></li>
+                                                <li><a href="./enviroment.html">ENVIRONMENT</a></li>
                                                 <li><a href="./reality.html">REALITY</a></li>
                                                 <li><a href="./space-sharing.html">SPACE SHARING</a></li>
                                                 <li><a href="./virtual-business.html">VIRTUAL BUSINESS</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="./personnel.html">PERSONNEL</a>
-                                            <ul class="dropdown">
-                                                <li><a href="./human-resource.html">HUMAN RESOURSE</a></li>
+                                            <ul class="dropdown dropdown2">
+                                                <li><a href="./human-resource.html">HUMAN RESOURCE</a></li>
                                                 <li><a href="./training-and-development.html">TRAINING & DEVELOPMENT</a></li>
                                             </ul>
                                         </li>
@@ -169,15 +191,16 @@
         <div class="container h-100">
             <div class="row h-100 align-items-end">
                 <div class="col-12">
-                    <div class="breadcumb--con">
-                        <h2 class="title"><span style="color: red;">SIC </span> <span style="color: red;">S</span>ERVICE <span style="color: red;">P</span>ROVIDER </h2>
-                        <nav aria-label="breadcrumb">
-                            <!--<ol class="breadcrumb">
+                    <div class="breadcumb--con" style="text-align: center;">
+                        <h2 class="title" style="font-size: 45px;"><span style="color: red;">P</span>ITCH <span style="color:red;">F</span>OR <span style="color: red;">F</span>UNDING </h2>
+                        <!--<nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Startup The Business</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">SIC Service Provider</li>
-                            </ol>-->
-                        </nav>
+                                <li class="breadcrumb-item"><a href="#">Services</a></li>
+                                <li class="breadcrumb-item"><a href="#">Finance</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Pitch For Funding</li>
+                            </ol>
+                        </nav>-->
                     </div>
                 </div>
             </div>
@@ -190,132 +213,223 @@
     </div>
     <!-- ***** Breadcrumb Area End ***** -->
 
-    <!-- ***** About SIC Service Provider Area Start ***** -->
-    <section class="uza-portfolio-single-area section-padding-80">
+    <!-- ***** Finance Area Start ***** -->
+    <section class="uza-portfolio-single-area section-padding-20">
         <div class="container">
             <div class="row justify-content-between align-items-end">
                 <div class="col-12 col-md-8">
                     <div class="portfolio-details-text">
-                        <h2><span style="color: red;">A</span>BOUT <span style="color: red;">SIC S</span>ERVICE <span style="color: red;"> P</span>ROVIDER </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                        <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
-                    <!-- Job Thumbnail -->
-                                <div class="welcome-thumbnail">
-                                    <img src="./img/bg-img/BG-4.png" alt="">
-                                </div>
-                </div>
+                    <!-- Finance Thumbnail -->
+                        <div class="welcome-thumbnail">
+                            <img src="./img/bg-img/PITCH FOR FUNDING.png" alt="">
+                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ***** About SIC Service Provider Area End ***** -->
+    <!-- ***** Finance Area End ***** -->
 
-    <!-- ***** Tree Structure Area Start ***** -->
-    <div class="uza-blog-area section-padding-30">
-        <div class="container">
-            <center><h2 style="font-size: 40px;"><span style="color: red;">M</span>ULTI <span style="color: red;">L</span>EVEL <span style="color: red;">L</span>EDERSHIP <span style="color: red;">H</span>IERARCHY</h2></center>
-            <br>
-            <div class="row">
-                <div class="tree">
-                    <ul>
-                        <li>
-                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Assistant Director</div></a>
-                            <ul>
-                                <li>
-                                    <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> AVP/Category Head</div></a>
-                                    <ul>
-                                        <li>
-                                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Joint Category Head</div></a>
-                                            <ul>
-                                                <li>
-                                                    <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Deputy Category Head</div></a>
-                                                    <ul>
-                                                        <li>
-                                                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Asst. Category Head</div></a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Chapter Head</div></a>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Junior Chapter Head</div></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                        <li>
-                                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Super Zonal Head</div></a>
-                                            <ul>
-                                                <li>
-                                                    <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Zonal Head</div></a>
-                                                    <ul>
-                                                        <li>
-                                                            <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> Regional Head</div></a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a><div class="search-icon" data-toggle="modal" data-target="#jobModal"><i class="fa fa-user" aria-hidden="true"></i> City Head</div></a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+
+    <!-- ***** SERVCIE Area Start ***** -->
+        
+      
+        
+        
+        
+        <div class="section-heading mb-5" align-text= "center;">
+                        <h2 style="padding:1em;"><span style="color: red;">S</span>ERVICE</h2>
+                    </div>
+        
+        
+           <div class="about-us-content mb-80">
+                        <div class="about-tab-area " style="margin-left: 100px; margin-right: 50px">
+                            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist" style="padding-left= 6em;">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab3" style="margin-right: 80px" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><span style="color: red;">S</span>EGMENT 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="margin-right: 80px" id="tab5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false"><span style="color: red;">S</span>EGMENT 5</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="margin-right: 80px" id="tab6" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false"><span style="color: red;">S</span>EGMENT 6</a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-7">
-                    <h2>ROLE OF MLL</h2>
-                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus estAt vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                </div>
+                        </div> 
             </div>
-        </div>
-    </div>
-    <!-- ***** Tree Structure Area End ***** -->
-
-    <!-- ***** Role POP UPs Area Start ***** -->
-    <div class="top-search-area">
-        <!-- Tree Modal -->
-        <div class="modal fade" id="jobModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close Button -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
-                        <!-- Contact -->
-                        <h2>ROLE OF MLL</h2>
-                        <p>Here we can write role</p>
+        
+        
+        
+            
+    <!-- ***** SERVICE Area End ***** -->
+     <div class="section-heading mb-5" align-text= "center;">
+         <h4 style="padding:1em;"><span style="color: red;">B</span><span>ASIC</span> &nbsp <span style="color:red;">S</span>ERVICES</h4>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                  
+             
+                                       
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                SERVICE 1
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <h5> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                             sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
 
-          <div class="col-12">
-                    <center>
-                           
-                        <a href="./request-for-partner.html" class="btn uza-btn btn-2">JOIN US NOW</a>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  SERVICE 2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
+                              </div>
+                            </div> 
+
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  SERVICE 3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
+                              </div>
+                            </div>
+                          </div>
                           
-                    
-                    </center>
-                </div>
-    <!-- ***** Job Description POP UPs Area End ***** -->
+                           
+                        </div>
+                    </div>
+                        
+                               
 
-     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area section-padding-80-0">
+        <div class="section-heading mb-5" align-text= "center;">
+         <h4 style="padding:2em;"><span style="color: red;">S</span><span>PECIALIZED</span> &nbsp <span style="color:red;">S</span>ERVICES</h4>
+                    </div>
+                                             
+                    
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                SERVICE 1
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <h5> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                             sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
+
+                            </div>
+                          </div>
+                    
+                           
+                        </div>
+                        </div>
+                      
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  SERVICE 2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
+                              </div>
+                            </div>
+                        
+                                
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  SERVICE 3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</h5>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                        
+                                
+                                       
+                            
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  
+  <!-- ***** Footer Area Start ***** -->
+      <footer class="footer-area section-padding-80-0">
         <div class="container">
             <div class="row justify-content-between">
 
@@ -409,7 +523,6 @@ Copyright SIC &copy;<script>document.write(new Date().getFullYear());</script> A
 
         </div>
     </footer>
-
     <!-- ***** Footer Area End ***** -->
 
     <!-- ******* All JS Files ******* -->
