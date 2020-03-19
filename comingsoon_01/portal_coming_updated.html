@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-    
+<link href="2-vertical.css" rel="stylesheet">
     
     <style>
     
@@ -49,7 +49,63 @@
   100% {opacity: 0; z-index: 1;}
 }
 
-    
+    /* [SLIDER] */
+#slider,  #slider .slide{
+  width: 500px;
+  height: 250px;
+}
+#slider {
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background: #ffd7d1;
+}
+#slider .container {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  animation: slide-animation 20s infinite;
+}
+#slider .slide {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+  0% { 
+    opacity: 0;
+    bottom: 0;
+  }
+  11% {
+    opacity: 1;
+    bottom: 0; 
+  }
+  22% { bottom: 100%; }
+  33% { bottom: 100%; }
+  44% { bottom: 200%; }
+  55% { bottom: 200%; }
+  66% { bottom: 300%; }
+  77% { bottom: 300%; }
+  88% {
+    opacity: 1;
+    bottom: 400%; 
+  }
+  100% {
+    opacity: 0;
+    bottom: 400%;
+  }
+}
+
+/* [DOES NOT MATTER] */
+html, body {
+  font-family: arial;
+  background: #ffe9d8;
+}
+h1 {
+  text-align: center;
+}
     
     </style>
 
@@ -57,20 +113,68 @@
     
 </head>
 <body data-gr-c-s-loaded="true">
-	
+  
+  
+
+
+
+
+
+
+
+
+
+  
 	
 	<div class="size1 bg0 where1-parent">
 		<!-- Coutdown -->
 		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-color: rgb(141, 143, 141);">
 		    
             
+      
+      <div id="slider">
+        <div class="container">
+          <div class="slide">
+            <h3>Slide 1</h3>
+            <p>
+              The episode orbits? The panic overwhelms a fuse. The major lurks below the shower! The tactic founds the nut. Why can't a pardon toss the sexist exercise?
+            </p>
+          </div>
+          <div class="slide">
+            <h3>Slide 2</h3>
+            <p>
+              The lasting astronomer balances the counter reminder. The trap hires the paradox. The employer watches the laser next to the exhausted historian. The water oils a breakfast.
+            </p>
+          </div>
+          <div class="slide">
+            <h3>Slide 3</h3>
+            <p>
+              Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust. The tired clash divides a widest sneak. The satire springs onto a misfortune after the inclined car.
+            </p>
+          </div>
+          <div class="slide">
+            <h3>Slide 4</h3>
+            <p>
+              A distributed actor pilots the null pencil. The wild wolfs a damp cage inside the breach. The blank toes the line underneath the arc. The sheep migrates within the transcript.
+            </p>
+          </div>
+          <div class="slide">
+            <h3>Slide 5</h3>
+            <p>
+              The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute. This damp loses before the president. The slave elects the north inside an exciting salt.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
             
-            
-            
+<!--             
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-<!--        <img src="..." class="d-block w-100" alt="...">-->
         
         	<div class="wsize2 flex-w flex-c-m cd100 js-tilt" style="transform: perspective(300px) rotateX(0deg) rotateY(0deg); will-change: transform;">
 				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
@@ -101,7 +205,6 @@
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p style="color: black">VISIT SIC-1025, 10th floor, trade tower B , WORLD TRADE TOWER SECTOR 16-NOIDA,201301</p>
-<!--      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>-->
     </blockquote>
   </div>
 </div>
@@ -112,30 +215,24 @@
         
     </div>
     <div class="carousel-item">
-<!--      <img src="..." class="d-block w-100" alt="...">-->
         
       
-<!--        <div class="wsize2 flex-w flex-c-m cd100 js-tilt" style="transform: perspective(300px) rotateX(0deg) rotateY(0deg); will-change: transform;">-->
 <div style="margin-top: 200px">
             <div class="row" style="margin-bottom: 10px">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text" style="font-weight: bold;color: black">CALL SIC</p>
                   <p class="card-text"  style="color: black">8826544031</p>
 
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">WATSAAP</p>
           <p class="card-text"  style="color: black">8376866012</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
@@ -146,20 +243,16 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text" style="font-weight: bold;color: black">MAIL TO CEO</p>
           <p class="card-text"  style="color: black">serveindiaconsult@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">MAIL TO COMPLAIN</p>
           <p class="card-text"  style="color: black">helpatsic@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
@@ -173,20 +266,16 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">BECOME OUR CONSULTANT</p>
           <p class="card-text"  style="color: black">partneratsic@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">FOR INVESTOR</p>
           <p class="card-text"  style="color: black">investatsic@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
@@ -195,20 +284,16 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">CAREERS AT SIC</p>
           <p class="card-text"  style="color: black">hratsic@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<!--        <h5 class="card-title">Special title treatment</h5>-->
         <p class="card-text"  style="font-weight: bold;color: black">CONSULT SIC</p>
           <p class="card-text"  style="color: black">consultsic@gmail.com</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
   </div>
@@ -228,28 +313,7 @@
             
             
             
-            
-            <!--
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">51</span>
-					<span class="s2-txt4">Days</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt4">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 minutes">55</span>
-					<span class="s2-txt4">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 seconds">47</span>
-					<span class="s2-txt4">Seconds</span>
-				</div>
--->
+  
                 
                 
                 <div class="card" style="margin-top: 20px">
@@ -259,7 +323,6 @@
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p style="color: black">VISIT SIC-1025, 10th floor, trade tower B , WORLD TRADE TOWER SECTOR 16-NOIDA,201301</p>
-<!--      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>-->
     </blockquote>
   </div>
 </div>
@@ -273,10 +336,12 @@
 </div>
             
             
-		</div>
+		</div> -->
 		
-		<!-- Form -->
-		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
+    <!-- Form -->
+    
+
+		<!-- <div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
 			<div class="wrap-pic1">
 				<img src="images/icons/SIC-LOGO.png" alt="LOGO">
 			</div>
@@ -353,7 +418,7 @@
 					<i class="fa fa-youtube-play"></i>
 				</a>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 
