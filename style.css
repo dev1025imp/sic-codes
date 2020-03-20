@@ -1521,8 +1521,10 @@ input:focus {
       font-weight: 600;
       margin-bottom: 15px;
       display: block; }
-      .single-blog-post .post-content .post-title:focus, .single-blog-post .post-content .post-title:hover {
-        color: red; }
+      .single-blog-post .post-content .post-title:focus, .single-blog-post .post-content .post-title,h5:hover {
+        color: red; 
+      }
+      
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-blog-post .post-content .post-title {
           font-size: 18px; } }
