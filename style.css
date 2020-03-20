@@ -1017,7 +1017,7 @@ input:focus {
       .testimonial-slides .owl-next i:hover, .testimonial-slides .owl-next i:focus,
       .testimonial-slides .owl-prev i:hover,
       .testimonial-slides .owl-prev i:focus {
-        color: #1583e9; }
+        color: rgba(124, 77,158,1); }
   .testimonial-slides .owl-next {
     left: auto;
     right: 0; }
