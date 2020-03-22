@@ -2142,36 +2142,3 @@ input:focus {
 /* panlak */
 
 
-
-.i-amphtml-accordion-content.p36_18_36_36 {padding: 36px 18px 36px 36px;}
-.accordion-eMenu_c {
-  width: 90%;
-  max-width: 600px;
-  border-bottom: 1px solid #d9e5e8;
-  margin: 0 auto;
-}
-.i-amphtml-accordion-header {
-  font-size: 20px;
-  font-weight: normal;
-  padding: 18px;
-  background: none;
-  border: none;
-  outline: 0;
-}
-.accordion-eMenu_c[expanded] .i-amphtml-accordion-header {border-bottom: 1px solid #1976D2;}
-.i-amphtml-accordion-header:hover,
-.i-amphtml-accordion-header:focus {color: #1976D2;}
-.accordion-header-indicator {
-  --w: 11px;
-  width: var(--w);
-  height: var(--w);
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  position: absolute;
-  top: calc(50% - var(--w) / 2);
-  right: 10px;
-  transition: .2s;
-}
-.accordion-eMenu_c[expanded] .accordion-header-indicator {transform: rotate(45deg);}
-.accordion-eMenu_c:not([expanded]) .accordion-header-indicator {transform: rotate(-45deg);}
-.i-amphtml-accordion-content {padding: 36px 18px;}
