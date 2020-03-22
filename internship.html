@@ -64,20 +64,28 @@ body {
 /* Main accordion container 
 ========================================================================== */
 .accordion {
-  background-color: #e3e3e3;
-  width: 90%;
+  background-color: white;
+  width: 70%;
   margin: 10px auto 0;
   padding: 5px 20px;
-  border-radius: 20px;
+  text-align: left;
+  /* border-radius: 20px; */
 }
 
 .accordion:hover{
   cursor: pointer;
+  
+  background-color: #e3e5e8;
 }
 
 /* Main accordion title 
 ========================================================================== */
-.accordion h1{
+/* .accordion h1{
+  display: inline;
+  font-weight: 100;
+} */
+
+.accordion h4{
   display: inline;
   font-weight: 100;
 }
@@ -91,7 +99,7 @@ body {
   border-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   outline: none;
 }
 
@@ -101,15 +109,15 @@ body {
 .accordion-panel{
   margin: 0 auto;
   padding: 10px 15px;
-  min-width: 80%;
-  max-width: 85%;
+  min-width: 60%;
+  max-width: 65%;
   border-width: 2px;
-  background-color: #fafafad4;
-  border-color: #e3e3e3;
+  background-color: transparent;
+  border-color: transparent;
   border-style: solid;
   border-top: none;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  /* border-bottom-left-radius: 25px; */
+  /* border-bottom-right-radius: 25px; */
 }
 
 /* Rotate class for dropdown button
@@ -285,7 +293,7 @@ body {
             <div class="row h-100 align-items-end">
                 <div class="col-12">
                     <div class="breadcumb--con">
-                        <h2 class="title" style="color: red;"> WHY INTERN AT SIC</h2>
+                        <h2 class="title"> <span style="color: red;">W</span>HY  <span style="color: red;">I</span>NTERN AT  <span style="color: red;">S</span>IC</h2>
                       
                     </div>
                 </div>
@@ -309,12 +317,14 @@ body {
     
     <div class="row justify-content-around">
         <div class="col-4">
-            <img src="./img/bg-img/certificate.png" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/certificate.png" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">CERTIFICATE</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
         </div>
         <div class="col-4">
-            <img src="./img/bg-img/letter.png" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/letter.png" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">LETTER OF RECOMMENDATION</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
 
@@ -323,13 +333,15 @@ body {
 <br/><br/><br/>
       <div class="row justify-content-around">
         <div class="col-4">
-            <img src="./img/bg-img/task.png" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/task.png" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">TASK SHEET</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
 
         </div>
         <div class="col-4">
-            <img src="./img/bg-img/offetletter.png" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/offetletter.png" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">PRE-PLACEMENT OFFER</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
 
@@ -338,24 +350,21 @@ body {
       <br/><br/><br/>
       <div class="row justify-content-around">
         <div class="col-4">
-            <img src="./img/bg-img/stipend.webp" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/stipend.webp" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">STIPEND</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
 
         </div>
         <div class="col-4">
-            <img src="./img/bg-img/bulb.png" alt="" style="width: 10%;height: 50px;">
+            <img src="./img/bg-img/bulb.png" alt="" style="width: 20%;height: 80px;">
+            <br/><br/>
             <p style="font-family: cuprum;font-weight: bold;color: red;">LEARNING OPPORTUNITY</p>
             <p>We hire the best talent on the market. You will work with some of the brightest people at SIC.</p>
 
         </div>
       </div>
 <br/>  <br/><br/><br/>
-
-<h3 style="color: red;">Current Openings</h3>
-
-<P style="font-family: Vollkorn;color: black;">
-    Come and explore a host of exciting career opportunities at SIC in the following functions / areas :</P>
 
 
 <br/><br/><br/>
@@ -371,7 +380,7 @@ body {
     </div><br/><br/><br/>
     <div class="accordion-container">
         <div class="accordion">
-          <h1>INTERNSHIPS 1</h1>
+          <h4>INTERNSHIP 1</h4>
           <button><i class="fa fa-chevron-down rotate"></i></button>
         </div>
         <div class="accordion-panel">
@@ -397,7 +406,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>ESPONSIBILITIES </h2>
+                            <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -414,7 +423,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h2>
+                            <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -431,7 +440,8 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">C</span>RITERIA </h2>
+                            <h3><span style="color: red;">E</span>LIGEBILITY 
+                                <span style="color: red;">C</span>RITERIA </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -472,11 +482,11 @@ body {
       
       <div class="accordion-container">
         <div class="accordion">
-          <h1>INTERNSHIPS 2</h1>
+          <h4>INTERNSHIP 2</h4>
           <button><i class="fa fa-chevron-down rotate"></i></button>
         </div>
         <div class="accordion-panel">
-            <h2><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h2>
+            <h3><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h3>
             <section class="uza-portfolio-single-area section-padding-80">
             <div class="container">
                 <div class="row justify-content-between align-items-end">
@@ -498,7 +508,7 @@ body {
                     <div class="col-12 col-md-8" style="padding: 10px;">
                         <div class="choose-us-content mb-80">
                             <div class="section-heading mb-4">
-                                <h2><span style="color: red;">R</span>ESPONSIBILITIES </h2>
+                                <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
                             </div>
                             <ul>
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -515,7 +525,8 @@ body {
                     <div class="col-12 col-md-8" style="padding: 10px;">
                         <div class="choose-us-content mb-80">
                             <div class="section-heading mb-4">
-                                <h2><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h2>
+                                <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">
+                                    SIC</span></h3>
                             </div>
                             <ul>
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -532,7 +543,8 @@ body {
                     <div class="col-12 col-md-8" style="padding: 10px;">
                         <div class="choose-us-content mb-80">
                             <div class="section-heading mb-4">
-                                <h2><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">C</span>RITERIA </h2>
+                                <h3><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">
+                                    C</span>RITERIA </h3>
                             </div>
                             <ul>
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -599,11 +611,11 @@ body {
 
 <div class="accordion-container">
     <div class="accordion">
-      <h1>INTERNSHIPS 1</h1>
+      <h4>INTERNSHIP 1</h4>
       <button><i class="fa fa-chevron-down rotate"></i></button>
     </div>
     <div class="accordion-panel">
-        <h2><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h2>
+        <h3><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h3>
         <section class="uza-portfolio-single-area section-padding-80">
         <div class="container">
             <div class="row justify-content-between align-items-end">
@@ -625,7 +637,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>ESPONSIBILITIES </h2>
+                            <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -642,7 +654,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h2>
+                            <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -659,7 +671,8 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">C</span>RITERIA </h2>
+                            <h3><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">
+                                C</span>RITERIA </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -700,7 +713,7 @@ body {
   
   <div class="accordion-container">
     <div class="accordion">
-      <h1>INTERNSHIPS 2</h1>
+      <h4>INTERNSHIP 2</h4>
       <button><i class="fa fa-chevron-down rotate"></i></button>
     </div>
     <div class="accordion-panel">
@@ -726,7 +739,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>ESPONSIBILITIES </h2>
+                            <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -743,7 +756,7 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h2>
+                            <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
@@ -760,7 +773,8 @@ body {
                 <div class="col-12 col-md-8" style="padding: 10px;">
                     <div class="choose-us-content mb-80">
                         <div class="section-heading mb-4">
-                            <h2><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">C</span>RITERIA </h2>
+                            <h3><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">
+                                C</span>RITERIA </h3>
                         </div>
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
