@@ -36,6 +36,103 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     border: none;
     margin-right: 110px;
     background-color: transparent;} 
+
+/* Accordion controls 
+========================================================================== */
+.control{
+  background-color: #de0000;
+  border-radius: 6px;
+  padding: 5px 10px;
+  border-style: none;
+  font-family: arial;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  margin: 10px;
+}
+
+.control:hover{
+  cursor: pointer;
+  color: #e8e8e8;
+}
+
+.control:active{
+  color: #000000;
+  padding: 4px 9px;
+  font-size: .95em;
+}
+
+/* Main accordion container 
+========================================================================== */
+.accordion {
+  background-color: #e3e3e3;
+  width: 90%;
+  margin: 10px auto 0;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.accordion:hover{
+  cursor: pointer;
+}
+
+/* Main accordion title 
+========================================================================== */
+.accordion h1{
+  display: inline;
+  font-weight: 100;
+}
+
+/* Main accordion arrow 
+========================================================================== */
+.accordion button{
+  float: right;
+  font-size: 20px;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+}
+
+
+/* Accordion dropdown panel
+========================================================================== */
+.accordion-panel{
+  margin: 0 auto;
+  padding: 10px 15px;
+  min-width: 80%;
+  max-width: 85%;
+  border-width: 2px;
+  background-color: #fafafad4;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-top: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* Rotate class for dropdown button
+========================================================================== */
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.up {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+
+
+
 </style>
 
 </head>
@@ -226,7 +323,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <div class="col-12 col-md-4 col-lg-4">
                     <!-- Finance Thumbnail -->
                         <div class="welcome-thumbnail">
-                            <img src="./img/bg-img/PITCH FOR FUNDING.png" alt="">
+                            <img src="./img/bg-img/P-3.png" alt="">
                         </div>
                 </div>
             </div>
@@ -247,8 +344,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         
         
            <div class="about-us-content mb-80">
-                        <div class="about-tab-area " style="margin-left: 100px; margin-right: 50px">
-                            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist" style="padding-left= 6em;">
+                        <div class="about-tab-area " style="margin-left: 100px; margin-right: 50px;font-size: 77px">
+                            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist" style="padding-left= 2em;margin-left: -102px>
                                 <li class="nav-item">
                                     <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 1</a>
                                 </li>
@@ -275,181 +372,135 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         
             
     <!-- ***** SERVICE Area End ***** -->
-     <div class="section-heading mb-5" align-text= "center;">
-         <h4 style="padding:1em;"><span style="color: red;">B</span><span>ASIC</span> &nbsp <span style="color:red;">S</span>ERVICES</h4>
-                    </div>
+    <div class="container h-100" style="align-text:center;">
+        <div class="row h-100 align-items-end">
+            <div class="col-12">
+                <div class="breadcumb--con">
+                    <h2 class="title" style="color: red;margin-top: -28px;">BASIC SERVICES</h2>
+                   
+                </div>
+            </div>
+        </div>
+    </div><br/>
                   
              
-                                       
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              SERVICE 2
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                 Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                                 Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                 
-                                  <div class="col-12 text-center mt-30">
-                                    <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                                </div>
-                                
-                                
-                                </h5>
-                          </div>
-                        </div> 
+                   
+<div class="accordion-container">
+    <div class="accordion">
+      <h3>SERVICE 1
+      <button><i class="fa fa-chevron-down rotate"></i></button></h3>
+    </div>
+    <div class="accordion-panel">
+        <h2><span style="color: red;">D</span><span style="color: red;"></span>ISCRIPTION </h2>
+        <section class="uza-portfolio-single-area section-padding-80">
+        <div class="container">
+            <div class="row justify-content-between align-items-end">
+                <div class="col-12 col-md-10">
+                    <div class="portfolio-details-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>    </div>
+  </div>
 
-                      
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                              <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  SERVICE 2
-                                </button>
-                              </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                              <div class="card-body">
-                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                     
-                                      <div class="col-12 text-center mt-30">
-                                        <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                                    </div>
-                                    
-                                    
-                                    </h5>
-                              </div>
-                            </div> 
+  <div class="accordion-container">
+    <div class="accordion">
+      <h3>SERVICE 2
+      <button><i class="fa fa-chevron-down rotate"></i></button></h3>
+    </div>
+    <div class="accordion-panel">
+        <h2><span style="color: red;">D</span> <span style="color: red;"></span>ISCRIPTION </h2>
+        <section class="uza-portfolio-single-area section-padding-80">
+        <div class="container">
+            <div class="row justify-content-between align-items-end">
+                <div class="col-12 col-md-10">
+                    <div class="portfolio-details-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>    </div>
+  </div>
+</br></br><br>
 
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingThree">
-                              <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  SERVICE 3
-                                </button>
-                              </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                              <div class="card-body">
-                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    
-                                      <div class="col-12 text-center mt-30">
-                                        <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                                    </div>
-                                    
-                                    
-                                    </h5>
-                              </div>
-                            </div>
-                          </div>
-                          
-                           
-                        </div>
-                    </div>
-                        
-                               
+<!--SPECIALIZED SERVICES-->
+<div class="container h-100" style="align-text:center;">
+    <div class="row h-100 align-items-end">
+        <div class="col-12">
+            <div class="breadcumb--con">
+                <h2 class="title" style="color: red;margin-top: -92px;">SPECIALIZED SERVICES</h2>
+               
+            </div>
+        </div>
+    </div>
+</div>
 
-        <div class="section-heading mb-5" align-text= "center;">
-         <h4 style="padding:2em;"><span style="color: red;">S</span><span>PECIALIZED</span> &nbsp <span style="color:red;">S</span>ERVICES</h4>
-                    </div>
-                                             
-                    
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                          <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                SERVICE 1
-                              </button>
-                            </h2>
-                          </div>
-                          <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body">
-                            <h5> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                             sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              
-                              <div class="col-12 text-center mt-30">
-                                <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                            </div>
-                        </h5>
-                    </div>
-                          </div>
-                           </div>
-                        </div>
-                      
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                              <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                  SERVICE 2
-                                </button>
-                              </h2>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                              <div class="card-body">
-                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                     
-                                      <div class="col-12 text-center mt-30">
-                                        <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                                    </div>
-                                    
-                                    
-                                    </h5>
-                              </div>
-                            </div>
-                        
-                                
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingSix">
-                              <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                  SERVICE 3
-                                </button>
-                              </h2>
-                            </div>
-                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                              <div class="card-body">
-                                <h5>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                                     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                      raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
-                                    
-                                      <div class="col-12 text-center mt-30">
-                                        <a href="booking-query.html" class="btn uza-btn btn-2">BOOK</a>
-                                    </div>
-                                    
-                                    </h5>
-                              </div>
-                            </div>
-                          </div>
-                        
-                        </div>
-                    </div>
-                        
-                                
+              
+         
+               
+<div class="accordion-container">
+<div class="accordion">
+  <h3>SERVICE 1
+  <button><i class="fa fa-chevron-down rotate"></i></button></h3>
+</div>
+<div class="accordion-panel">
+    <h2><span style="color: red;">D</span><span style="color: red;"></span>ISCRIPTION </h2>
+    <section class="uza-portfolio-single-area section-padding-80">
+    <div class="container">
+        <div class="row justify-content-between align-items-end">
+            <div class="col-12 col-md-10">
+                <div class="portfolio-details-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+</div>
+
+<div class="accordion-container">
+<div class="accordion">
+  <h3>SERVICE 2
+  <button><i class="fa fa-chevron-down rotate"></i></button></h3>
+</div>
+<div class="accordion-panel">
+    <h2><span style="color: red;">D</span> <span style="color: red;"></span>ISCRIPTION </h2>
+    <section class="uza-portfolio-single-area section-padding-80">
+    <div class="container">
+        <div class="row justify-content-between align-items-end">
+            <div class="col-12 col-md-10">
+                <div class="portfolio-details-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+</div>
+
+<br/><br/>               
+               
+            
+              
                                        
                             
      
-               
+        
         
         
         
