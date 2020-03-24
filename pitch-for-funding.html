@@ -15,6 +15,10 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+<!--<link href="css/stylee.css" rel="stylesheet" />-->
+
+     <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/vtabs.css">
     <style>
 table {
   border-collapse: collapse;
@@ -36,103 +40,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     border: none;
     margin-right: 110px;
     background-color: transparent;} 
-
-/* Accordion controls 
-========================================================================== */
-.control{
-  background-color: #de0000;
-  border-radius: 6px;
-  padding: 5px 10px;
-  border-style: none;
-  font-family: arial;
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  outline: none;
-  margin: 10px;
-}
-
-.control:hover{
-  cursor: pointer;
-  color: #e8e8e8;
-}
-
-.control:active{
-  color: #000000;
-  padding: 4px 9px;
-  font-size: .95em;
-}
-
-/* Main accordion container 
-========================================================================== */
-.accordion {
-  background-color: #e3e3e3;
-  width: 90%;
-  margin: 10px auto 0;
-  padding: 5px 20px;
-  border-radius: 20px;
-}
-
-.accordion:hover{
-  cursor: pointer;
-}
-
-/* Main accordion title 
-========================================================================== */
-.accordion h1{
-  display: inline;
-  font-weight: 100;
-}
-
-/* Main accordion arrow 
-========================================================================== */
-.accordion button{
-  float: right;
-  font-size: 20px;
-  background-color: transparent;
-  border-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-  outline: none;
-}
-
-
-/* Accordion dropdown panel
-========================================================================== */
-.accordion-panel{
-  margin: 0 auto;
-  padding: 10px 15px;
-  min-width: 80%;
-  max-width: 85%;
-  border-width: 2px;
-  background-color: #fafafad4;
-  border-color: #e3e3e3;
-  border-style: solid;
-  border-top: none;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-/* Rotate class for dropdown button
-========================================================================== */
-
-.rotate {
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
-}
-
-.rotate.up {
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
-}
-
-
-
-
-
 </style>
 
 </head>
@@ -163,7 +70,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </div>
             </div>
         </div>
-     </div>
+    </div>
     <!-- ***** Top Search Area End ***** -->
 
     <!-- ***** Header Area Start ***** -->
@@ -323,7 +230,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <div class="col-12 col-md-4 col-lg-4">
                     <!-- Finance Thumbnail -->
                         <div class="welcome-thumbnail">
-                            <img src="./img/bg-img/P-3.png" alt="">
+                            <img src="./img/bg-img/PITCH FOR FUNDING.png" alt="">
                         </div>
                 </div>
             </div>
@@ -343,178 +250,364 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     </div>
         
         
-           <div class="about-us-content mb-80">
-                        <div class="about-tab-area " style="margin-left: 100px; margin-right: 50px;font-size: 77px">
-                            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist" style="padding-left= 2em;margin-left: -102px>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab3" style="margin-right: 80px" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><span style="color: red;">S</span>EGMENT 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab2" style="margin-right: 80px" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><span style="color: red;">S</span>EGMENT 4</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="margin-right: 80px" id="tab5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false"><span style="color: red;">S</span>EGMENT 5</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="margin-right: 80px" id="tab6" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false"><span style="color: red;">S</span>EGMENT 6</a>
-                                </li>
-                            </ul>
+            
+    <div class="about-us-content mb-80">
+                        <div class="about-tab-area " style="margin-left: 100px; margin-right: 50px">
+                            <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--2-col">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#tab1-panel" class="mdl-tabs__tab is-active">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 1
+											         </a>
+                    <a href="#tab2-panel" class="mdl-tabs__tab">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 2
+											          </a>
+                    <a href="#tab3-panel" class="mdl-tabs__tab">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 3
+											          </a>
+                    <a href="#tab4-panel" class="mdl-tabs__tab">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 4
+											          </a>
+                    <a href="#tab5-panel" class="mdl-tabs__tab">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 5
+											          </a>
+                    <a href="#tab6-panel" class="mdl-tabs__tab">
+                        <span class="hollow-circle"></span>
+                        SEGMENT 6
+											          </a>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--10-col">
+                <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                    
+                     <h5 class="card-title" style="color: red;margin-top: 1px;;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+                        <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+                        <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+</div>   					     
+                </div>
+                <div class="mdl-tabs__panel" id="tab2-panel">
+                    <h5 class="card-title" style="color: red;margin-top: 1px;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                       
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        
+</div>   
+      											
+                </div>
+                <div class="mdl-tabs__panel" id="tab3-panel">
+                   <h5 class="card-title" style="color: red;margin-top: 1px;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                       
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        
+</div>   
+      											
+                </div>
+                <div class="mdl-tabs__panel" id="tab4-panel">
+                   <h5 class="card-title" style="color: red;margin-top: 1px;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                       
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        
+</div>   
+      											
+                </div>
+                <div class="mdl-tabs__panel" id="tab5-panel">
+                     <h5 class="card-title" style="color: red;margin-top: 1px;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                       
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        
+</div>   
+												     
+                </div>
+                <div class="mdl-tabs__panel" id="tab6-panel">
+                      <h5 class="card-title" style="color: red;margin-top: 1px;width: 20%;">B<span style="color: black;">ASIC</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                       
+</div>                        
+						 <h5 class="card-title" style="color: red;margin-top: 18px;width: 29%;">S<span style="color: black;">PECIALIZED</span> S<span style="color: black;">ERVICES</span></h5>
+                    <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red" >SERVICE 1</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: red">SERVICE 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ <div class="col-sm-3">
+<a href="./booking-query.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" style="width: 5px;padding-left: 2px;font-size: 13px;margin-left: -18px;">TO BOOK A SERVICE</a>  </div>  </div>
+    </div>
+  </div>
+                        
+</div>   
+												     
+                </div>
+            </div>
+        </div>
+    </div>
                         </div> 
-            </div>
-        
-        
-        
-            
-    <!-- ***** SERVICE Area End ***** -->
-    <div class="container h-100" style="align-text:center;">
-        <div class="row h-100 align-items-end">
-            <div class="col-12">
-                <div class="breadcumb--con">
-                    <h2 class="title" style="color: red;margin-top: -28px;">BASIC SERVICES</h2>
-                   
-                </div>
-            </div>
-        </div>
-    </div><br/>
-                  
-             
-                   
-<div class="accordion-container">
-    <div class="accordion">
-      <h3>SERVICE 1
-      <button><i class="fa fa-chevron-down rotate"></i></button></h3>
-    </div>
-    <div class="accordion-panel">
-        <h2><span style="color: red;">D</span><span style="color: red;"></span>ISCRIPTION </h2>
-        <section class="uza-portfolio-single-area section-padding-80">
-        <div class="container">
-            <div class="row justify-content-between align-items-end">
-                <div class="col-12 col-md-10">
-                    <div class="portfolio-details-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>    </div>
-  </div>
-
-  <div class="accordion-container">
-    <div class="accordion">
-      <h3>SERVICE 2
-      <button><i class="fa fa-chevron-down rotate"></i></button></h3>
-    </div>
-    <div class="accordion-panel">
-        <h2><span style="color: red;">D</span> <span style="color: red;"></span>ISCRIPTION </h2>
-        <section class="uza-portfolio-single-area section-padding-80">
-        <div class="container">
-            <div class="row justify-content-between align-items-end">
-                <div class="col-12 col-md-10">
-                    <div class="portfolio-details-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>    </div>
-  </div>
-</br></br><br>
-
-<!--SPECIALIZED SERVICES-->
-<div class="container h-100" style="align-text:center;">
-    <div class="row h-100 align-items-end">
-        <div class="col-12">
-            <div class="breadcumb--con">
-                <h2 class="title" style="color: red;margin-top: -92px;">SPECIALIZED SERVICES</h2>
-               
-            </div>
-        </div>
-    </div>
-</div>
-
-              
-         
-               
-<div class="accordion-container">
-<div class="accordion">
-  <h3>SERVICE 1
-  <button><i class="fa fa-chevron-down rotate"></i></button></h3>
-</div>
-<div class="accordion-panel">
-    <h2><span style="color: red;">D</span><span style="color: red;"></span>ISCRIPTION </h2>
-    <section class="uza-portfolio-single-area section-padding-80">
-    <div class="container">
-        <div class="row justify-content-between align-items-end">
-            <div class="col-12 col-md-10">
-                <div class="portfolio-details-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>    </div>
-</div>
-
-<div class="accordion-container">
-<div class="accordion">
-  <h3>SERVICE 2
-  <button><i class="fa fa-chevron-down rotate"></i></button></h3>
-</div>
-<div class="accordion-panel">
-    <h2><span style="color: red;">D</span> <span style="color: red;"></span>ISCRIPTION </h2>
-    <section class="uza-portfolio-single-area section-padding-80">
-    <div class="container">
-        <div class="row justify-content-between align-items-end">
-            <div class="col-12 col-md-10">
-                <div class="portfolio-details-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>    </div>
-</div>
-
-<br/><br/>               
-               
-            
-              
-                                       
-                            
-     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-  
+     </div>
+    
   <!-- ***** Footer Area Start ***** -->
-      <footer class="footer-area section-padding-80-0">
+      <footer class="footer-area section-padding-80-0"style="background-color: #e8fcf7;">
         <div class="container">
             <div class="row justify-content-between">
 
@@ -526,10 +619,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
                         <!-- Footer Content -->
                         <div class="footer-content mb-15">
-                            <h4><p>Phone No : <br><span style="color: red;">0120-4152010</span><br> Mob.No. :<br><span style="color: red;">8826544031</span><br>whatsapp :<br><span style="color: red;">8376866012</span>
-                            <p>Address : <br><span style="color: red;">1025, 10th Floor, Tower B, World Trade Tower, Plot No. C-1, Sector-16, Noida-201301</span>
-                        </div>
-                        <p class="mb-0">Mon - Fri: 9:00 - 19:00 <br>
+                            <h4><p>&nbsp MOBILE NUMBER:<br><span style="color: red;">+91-8826544031</span><br>WHATSAPP:<br><span style="color: red;">+91-8376866012</span>
+                                <p>ADDRESS:<br/><span style="color: red;">1025, 10th Floor, Tower B, World Trade Tower,Plot No.C-1<br/> Sector-16, Noida-201301</span>
+                                </p></h4></div>
+                        <p class="mb-0">Mon - Sat 9:00 - 19:00 <br>
                             Closed on Weekends</p>
                     </div>
                 </div>
@@ -543,12 +636,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                         <!-- Nav -->
                          <nav>
                             <ul class="our-link">
-                                <li><a href="index.html">About Us</a></li>
-                                <li><a href="team.html">Our Team</a></li>
-                                <li><a href="http://sic.imparitysoftware.com/index.html">Our Portal</a></li>
-                                <li><a href="startup-the-business.html">Join STB community</a></li>
-                                <li><a href="career.html">Career with SIC</a></li>
-                                <li><a href="contact.html">Customer Support</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="startup-the-business.html">Business Journey</a></li>
+                                <li><a href="startup-the-business.html">Startup the Business</a></li>
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="contact.html"> &nbsp Customer Support</a></li>
                                 
                             </ul>
                         </nav>
@@ -579,13 +673,14 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     <div class="single-footer-widget mb-80">
                         <!-- Widget Title -->
                         <h4 class="widget-title">EMAIL ID</h4>
-                        <p style="color: red;cursor:pointer;">servindiaconsultants@gmail.com</p>
+                        <p><a href="#"style="color: red;cursor:pointer;">servindiaconsultants@gmail.com</a><br><a href="#" style="color: red;cursor:pointer;">helpatsic@gmail.com</a><br>
+                            <a href="#" style="color: red;cursor:pointer;">partnerwithsic@gmail.com</a><br><a href="#" style="color: red;cursor:pointer;">investatsic@gmail.com</a><br><a href="#" style="color: red;cursor:pointer;">hratsic@gmail.com</a><br><a href="#" style="color: red;cursor:pointer;">consultatsic@gmail.com</a></p>
                         
 
 
                         <!-- Copywrite Text -->
                         <div class="copywrite-text mb-30">
-                            <p>&copy; Copyright 2018 <a href="#">Colorlib</a>.</p>
+                            <p>&copy; Copyright SIC 2020 <!--<a href="#">SIC</a>-->
                         </div>
 
                         <!-- Social Info -->
@@ -594,6 +689,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                             <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
                             <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
                             <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+                             <a href="#" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -602,12 +698,11 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 <div class="row" style="margin-bottom: 30px;">
                 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright SIC &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
+<!--Copyright SIC &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+            </div>-->
             </div>
- 
-
-        </div>
-    </footer>
+          </div>
+        </footer>
     <!-- ***** Footer Area End ***** -->
 
     <!-- ******* All JS Files ******* -->
@@ -621,6 +716,8 @@ Copyright SIC &copy;<script>document.write(new Date().getFullYear());</script> A
     <script src="js/uza.bundle.js"></script>
     <!-- Active js -->
     <script src="js/default-assets/active.js"></script>
+
+    <script src='https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js'></script>
 
 </body>
 
