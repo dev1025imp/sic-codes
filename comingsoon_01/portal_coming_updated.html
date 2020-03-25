@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-     <title>Serv India Consultants</title>
+    <title>Serv India Consultants</title>
     <link rel="icon" href="images/favicon.png">
 
     <!--===============================================================================================-->
@@ -65,7 +65,27 @@
             }
         }
     </style>
-
+    <script>
+        var deadline = new Date("Nov 14, 2020 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var t = deadline - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + "d "
+            + hours + "h " + minutes + "m " + seconds + "s ";
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 
 
 </head>
@@ -84,14 +104,14 @@
                             <div class="row" style="margin-bottom: 10px">
                                 <div class="col-sm-3">
                                     <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-                                        <span class="l2-txt1 p-b-9 days">51</span>
+                                        <span class="l2-txt1 p-b-9 days" id="days">51</span>
                                         <span class="s2-txt4">Days</span>
                                     </div>
 
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-                                        <span class="l2-txt1 p-b-9 hours">17</span>
+                                        <span class="l2-txt1 p-b-9 hours" id="hours">17</span>
                                         <span class="s2-txt4">Hours</span>
                                     </div>
 
@@ -101,15 +121,19 @@
                             <div class="row" style="margin-bottom: 10px">
                                 <div class="col-sm-3">
                                     <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-                                        <span class="l2-txt1 p-b-9 minutes">55</span>
+                                        <span class="l2-txt1 p-b-9 minutes" id="minutes">55</span>
                                         <span class="s2-txt4">Minutes</span>
                                     </div>
 
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-                                        <span class="l2-txt1 p-b-9 seconds">47</span>
+                                        <span class="l2-txt1 p-b-9 seconds" id="seconds">47</span>
                                         <span class="s2-txt4">Seconds</span>
+                                        <p id="demo" style="visibility: hidden;">
+                                            <input />
+
+                                        </p>
                                     </div>
 
                                 </div>
@@ -136,125 +160,112 @@
 
                             </div>
                         </div>
-                        <div class="slide">
+                        <div class="slide" style="margin-top: 15%;">
                             <!-- <h2>Title #2</h2>-->
                             <div>
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px;border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                CALL SIC <span style="color: black">8826544031</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                WHATSAPP - <span style="color: black">8376866012</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                MAIL TO CEO - <span style="color: black">servindiaconsultants@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                MAIL TO COMPLAIN-  <span style="color: black">helpatsic@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                BECOME OUR CONSULTANT-  <span style="color: black">partnerwithsic@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                FOR INVESTOR-  <span style="color: black">investinsic@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                CAREERS AT SIC-  <span style="color: black">hratsic@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="color: #E40000; font-weight: bold;text-align: center;">
-                                                CONSULT SIC-  <span style="color: black">consultsic@gmail.com</span>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!--<div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="card" style="margin-top: 8px;margin-right: 27px; border: 4px solid red;">
-                                            <div class="card-header" style="font-weight: bold; color: #E40000;text-align: center;">
-                                                ADDRESS -
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                CALL SIC
                                                 <br />
-                                                <span style="color: black">SERV INDIA CONSULTANTS<br />
-                                                1025, 10TH FLOOR,
-                                                <br />
-                                                TOWER B, WORLD TRADE TOWER<br />
-                                                OPPOSITE RAJNIGANDHA CHOWK,<br />
-                                                SECTOR 16 NOIDA,
-                                                <br />
-                                                UTTAR PRADESH, 201301</span>
+                                                <span style="color: black">8826544031</span>
                                             </div>
 
                                         </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                WHATSAPP
+                                                <br />
+                                                <span style="color: black">8376866012</span>
+                                            </div>
+
+                                        </div>
+
                                     </div>
 
-                                </div>-->
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                MAIL TO CEO <span style="color: black">servindiaconsultants<br />
+                                                    @gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                MAIL TO COMPLAIN <span style="color: black">helpatsic<br />
+                                                    @gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                BECOME OUR CONSULTANT <span style="color: black">partnerwithsic@gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                FOR INVESTOR 
+                                                <br />
+                                                <span style="color: black">investinsic<br />
+                                                    @gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                CAREERS AT SIC 
+                                                <br />
+                                                <span style="color: black">hratsic<br />
+                                                    @gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="margin-top: 8px; border: 4px solid red;">
+                                            <div class="card-header" style="color: #E40000; font-weight: bold; text-align: center;">
+                                                CONSULT SIC
+                                                <br />
+                                                <span style="color: black">consultsic<br />
+                                                    @gmail.com</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
 
 
                             </div>
@@ -348,14 +359,14 @@
                 <a href="#" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
                     <i class="fa fa-pinterest"></i>
                 </a>
-                 <a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+                <a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
                     <i class="fa fa-instagram"></i>
                 </a>
-                 <a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+                <a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
                     <i class="fa fa-linkedin"></i>
                 </a>
-               
-               
+
+
             </div>
         </div>
     </div>
@@ -372,11 +383,11 @@
     <!--===============================================================================================-->
     <script src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/countdowntime/moment.min.js"></script>
+   <!-- <script src="vendor/countdowntime/moment.min.js"></script>
     <script src="vendor/countdowntime/moment-timezone.min.js"></script>
-    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-    <script>
+    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>-->
+   <!-- <script src="vendor/countdowntime/countdowntime.js"></script>-->
+    <!--<script>
         $('.cd100').countdown100({
             /*Set Endtime here*/
             /*Endtime must be > current time*/
@@ -390,7 +401,7 @@
             // ex:  timeZone: "America/New_York"
             //go to " http://momentjs.com/timezone/ " to get timezone
         });
-	</script>
+	</script>-->
     <!--===============================================================================================-->
     <!--<script src="vendor/tilt/tilt.jquery.min.js"></script>-->
     <!--<script>
