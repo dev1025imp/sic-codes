@@ -54,7 +54,7 @@ Primary use:
   width: 100%;
   position: relative;
   background-color: #fff;
-  height: 50px;
+  height: 35px;
   border: 2px solid #e6e6e6;
   border-radius: 5px;
 }
@@ -325,7 +325,7 @@ input.input100 {
 .bg1 {background-color: #57b846;}
 .bg3 {background-color: #3b5998;}
 .bg4 {background-color: #1da1f2;}
-.bg5 {background-color: #cd201f;}
+.bg5 {background-color: #d91a18;}
 
 .bg-img1 {
   background-position: center;

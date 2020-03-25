@@ -6,7 +6,7 @@ $(document).ready( function() {
   function animasyon(px){
     $('#slider').stop(false, false).animate({
       top: -px
-    }, 300);
+    }, 2700);
   }
  
   $('#sayfalama a').click(function(){
@@ -28,5 +28,5 @@ $(document).ready( function() {
     }
     animasyon(tumyukseklik);
     i++;
-  }, 3000);
+  }, 9000);
 });
