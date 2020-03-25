@@ -3,152 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Serv India Consultants</title>
+     <title>Serv India Consultants</title>
     <link rel="icon" href="./img/core-img/favicon.png">
     <link href="css/stylee.css" rel="stylesheet" />
-<style>
+
+
+    <style>
 
 
 
-/* ==========================================================================
-  Author: Alex Megahy
-  Date: 29/09/2019
-  Version: 1
-========================================================================== */
+        /* ==========================================================================
+          Author: Alex Megahy
+          Date: 29/09/2019
+          Version: 1
+        ========================================================================== */
+        
+        
+        /* ==========================================================================
+          Default tags
+        ========================================================================== */
+        body {
+          width: 100%;
+          margin: 0;
+          font-family: Tahoma;
+        }
+        
+        /* Accordion controls 
+        ========================================================================== */
+        .control{
+          background-color: #de0000;
+          border-radius: 6px;
+          padding: 5px 10px;
+          border-style: none;
+          font-family: arial;
+          font-size: 1em;
+          font-weight: bold;
+          color: #fff;
+          outline: none;
+          margin: 10px;
+        }
+        
+        .control:hover{
+          cursor: pointer;
+          color: #e8e8e8;
+        }
+        
+        .control:active{
+          color: #000000;
+          padding: 4px 9px;
+          font-size: .95em;
+        }
+        
+        /* Main accordion container 
+        ========================================================================== */
+        .accordion {
+          background-color: white;
+          width: 70%;
+          margin: 10px auto 0;
+          padding: 5px 20px;
+          text-align: left;
+          /* border-radius: 20px; */
+        }
+        
+        .accordion:hover{
+          cursor: pointer;
+          
+          background-color: #e3e5e8;
+        }
+        
+        /* Main accordion title 
+        ========================================================================== */
+        /* .accordion h1{
+          display: inline;
+          font-weight: 100;
+        } */
+        
+        .accordion h4{
+          display: inline;
+          font-weight: 100;
+          color: purple;
+        }
+        
+        
+        h4:hover {
+                color: red;
+              }
+        
+        
+        /* Main accordion arrow 
+        ========================================================================== */
+        .accordion button{
+          float: right;
+          font-size: 18px;
+          color: purple;
+          background-color: transparent;
+          border-style: none;
+          padding: 0;
+          margin: 0;
+          margin-top: 2px;
+          outline: none;
+        }
+        
+        
+        /* Accordion dropdown panel
+        ========================================================================== */
+        .accordion-panel{
+          margin: 0 auto;
+          padding: 10px 15px;
+          min-width: 60%;
+          max-width: 65%;
+          border-width: 2px;
+          background-color: transparent;
+          border-color: transparent;
+          border-style: solid;
+          border-top: none;
+          /* border-bottom-left-radius: 25px; */
+          /* border-bottom-right-radius: 25px; */
+        }
+        
+        /* Rotate class for dropdown button
+        ========================================================================== */
+        
+        .rotate {
+            -moz-transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+            /* color: red; */
+        }
+        
+        
+        .rotate1 {
+            -moz-transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+            /* color: red; */
+        }
+        
+        .rotate.up {
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            transform:rotate(180deg);
+            color: red;
+        }
+        
+        
+        
+        </style>
 
 
-/* ==========================================================================
-  Default tags
-========================================================================== */
-body {
-  width: 100%;
-  margin: 0;
-  font-family: Tahoma;
-}
-
-/* Accordion controls 
-========================================================================== */
-.control{
-  background-color: #de0000;
-  border-radius: 6px;
-  padding: 5px 10px;
-  border-style: none;
-  font-family: arial;
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  outline: none;
-  margin: 10px;
-}
-
-.control:hover{
-  cursor: pointer;
-  color: #e8e8e8;
-}
-
-.control:active{
-  color: #000000;
-  padding: 4px 9px;
-  font-size: .95em;
-}
-
-/* Main accordion container 
-========================================================================== */
-.accordion {
-  background-color: white;
-  width: 70%;
-  margin: 10px auto 0;
-  padding: 5px 20px;
-  text-align: left;
-  /* border-radius: 20px; */
-}
-
-.accordion:hover{
-  cursor: pointer;
-  
-  background-color: #e3e5e8;
-}
-
-/* Main accordion title 
-========================================================================== */
-/* .accordion h1{
-  display: inline;
-  font-weight: 100;
-} */
-
-.accordion h4{
-  display: inline;
-  font-weight: 100;
-  color: purple;
-}
 
 
-h4:hover {
-        color: red;
-      }
-
-
-/* Main accordion arrow 
-========================================================================== */
-.accordion button{
-  float: right;
-  font-size: 18px;
-  color: purple;
-  background-color: transparent;
-  border-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 2px;
-  outline: none;
-}
-
-
-/* Accordion dropdown panel
-========================================================================== */
-.accordion-panel{
-  margin: 0 auto;
-  padding: 10px 15px;
-  min-width: 60%;
-  max-width: 65%;
-  border-width: 2px;
-  background-color: transparent;
-  border-color: transparent;
-  border-style: solid;
-  border-top: none;
-  /* border-bottom-left-radius: 25px; */
-  /* border-bottom-right-radius: 25px; */
-}
-
-/* Rotate class for dropdown button
-========================================================================== */
-
-.rotate {
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
-    /* color: red; */
-}
-
-
-.rotate1 {
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
-    /* color: red; */
-}
-
-.rotate.up {
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
-    color: red;
-}
-
-
-
-</style>
 </head>
 
 <body>
@@ -180,7 +186,7 @@ h4:hover {
     </div>
     <!-- ***** Top Search Area End ***** -->
 
-    <!-- ***** Header Area Start ***** -->
+        <!-- ***** Header Area Start ***** -->
     <header class="header-area">
         <!-- Main Header Start -->
         <div class="main-header-area">
@@ -285,8 +291,7 @@ h4:hover {
                                 </li>
                                 <li><a href="./contact.html"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a></li>
                                 <li><a href="./Login_v1/login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                <li><a  data-toggle="modal" data-target="#searchModal">
-                                        <i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                <li><div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></div></li>
                             </ul>
 
                         <!-- Nav End -->
@@ -300,310 +305,35 @@ h4:hover {
 
     <!-- ***** Breadcrumb Area Start ***** -->
     <div class="breadcrumb-area">
-        <div class="container h-100" style="align-text:center;">
+        <div class="container h-100">
             <div class="row h-100 align-items-end">
                 <div class="col-12">
                     <div class="breadcumb--con">
-                        <h2 class="title" style="margin-bottom: 3%;"> <span style="color: red;">W</span>HY  <span style="color: red;">I</span>NTERN <span style="color: red;">A</span>T  <span style="color: red;">S</span>IC</h2>
-                      
+                        <h2 class="title"><span style="color: red;">O<span style="color: black;">FFLINE <span style="color: red;">C</span>OURSES</span></h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <!--<li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Career</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Training</li>-->
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-       
+        <!-- Background Curve -->
         <div class="breadcrumb-bg-curve">
             <img src="./img/core-img/curve-5.png" alt="">
         </div>
-    </div>
-
-
-
-    <div class="container">
-    
-    <div class="row justify-content-around">
-        <div class="col-4">
-            <img src="./img/bg-img/certificate.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">CERTIFICATE</p>
-        </div>
-        <div class="col-4">
-            <img src="./img/bg-img/letter.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">LETTER OF RECOMMENDATION</p>
-
-        </div>
-      </div></div>
-<br/><br/><br/>
-<div class="container">
-      <div class="row justify-content-around">
-        <div class="col-4">
-            <img src="./img/bg-img/task.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">TASK SHEET</p>
-
-        </div>
-        <div class="col-4">
-            <img src="./img/bg-img/offetletter.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">PRE-PLACEMENT OFFER</p>
-
-        </div>
-      </div></div>
-      <br/><br/><br/>
-      <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-4">
-            <img src="./img/bg-img/stipend.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">STIPEND</p>
-
-        </div>
-        <div class="col-4">
-            <img src="./img/bg-img/bulb.png" alt="" style="width: 20%;height: 80px;">
-            <br/><br/>
-            <p style="font-family: cuprum;font-weight: bold;color: red;">LEARNING OPPORTUNITY</p>
-
-        </div>
-      </div></div>
-<br/>  <br/><br/>
-
-
-<br/><br/><br/>
-      <div class="container h-100" style="align-text:center;">
-        <div class="row h-100 align-items-end">
-            <div class="col-12">
-                <div class="breadcumb--con">
-                    <h2 class="title"><span style="color: red;">F</span>ULL<span style="color: red;"> T</span>IME <span style="color: red;">I</span>NTERNSHIPS</h2>
-                   
-                </div>
-            </div>
-        </div>
     </div><br/><br/><br/>
-    <div class="accordion-container">
-        <div class="accordion">
-          <h4>INTERNSHIP 1</h4>
-          <button><i class="fa fa-chevron-down rotate"></i></button>
-        </div>
-        <div class="accordion-panel">
-            <h2><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h2>
-            <section class="uza-portfolio-single-area section-padding-80">
-        <div class="container">
-            <div class="row justify-content-between align-items-end">
-                <div class="col-12 col-md-8">
-                    <div class="portfolio-details-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <!-- Job Thumbnail -->
-                                <div class="welcome-thumbnail">
-                                    <img src="./img/bg-img/BG-4.png" alt="">
-                                </div>
-                </div>
+    <!-- ***** Breadcrumb Area End ***** -->
 
-                <!-- Role Content -->
-                <div class="col-12 col-md-8" style="padding: 10px;">
-                    <div class="choose-us-content mb-80">
-                        <div class="section-heading mb-4">
-                            <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
-                        </div>
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Role Content -->
-                <div class="col-12 col-md-8" style="padding: 10px;">
-                    <div class="choose-us-content mb-80">
-                        <div class="section-heading mb-4">
-                            <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">SIC</span></h3>
-                        </div>
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Eligeblity Criteria Content -->
-                <div class="col-12 col-md-8" style="padding: 10px;">
-                    <div class="choose-us-content mb-80">
-                        <div class="section-heading mb-4">
-                            <h3><span style="color: red;">E</span>LIGEBILITY 
-                                <span style="color: red;">C</span>RITERIA </h3>
-                        </div>
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                        </ul>
-                    </div>
-                    <!-- Join Form -->
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="nl-form mb-80">
-                        <form action="#" method="post">
-                            <span style="position:absolute; left:10px;">
-    <a
-      href="javascript:void(
-        window.open(
-          'https://form.jotform.com/200492401262443',
-          'blank',
-          'scrollbars=yes,
-          toolbar=no,
-          width=700,
-          height=500'
-        )
-      )
-    ">
-      Online Interview Questionnaire Form
-    </a></span>
-                        </form>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>        </div>
-      </div>
-      
-      <div class="accordion-container">
-        <div class="accordion">
-          <h4>INTERNSHIP 2</h4>
-          <button><i class="fa fa-chevron-down rotate"></i></button>
-        </div>
-        <div class="accordion-panel">
-            <h3><span style="color: red;">J</span>OB <span style="color: red;">P</span>ROFILE </h3>
-            <section class="uza-portfolio-single-area section-padding-80">
-            <div class="container">
-                <div class="row justify-content-between align-items-end">
-                    <div class="col-12 col-md-8">
-                        <div class="portfolio-details-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <!-- Job Thumbnail -->
-                                    <div class="welcome-thumbnail">
-                                        <img src="./img/bg-img/BG-4.png" alt="">
-                                    </div>
-                    </div>
-    
-                    <!-- Role Content -->
-                    <div class="col-12 col-md-8" style="padding: 10px;">
-                        <div class="choose-us-content mb-80">
-                            <div class="section-heading mb-4">
-                                <h3><span style="color: red;">R</span>ESPONSIBILITIES </h3>
-                            </div>
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <!-- Role Content -->
-                    <div class="col-12 col-md-8" style="padding: 10px;">
-                        <div class="choose-us-content mb-80">
-                            <div class="section-heading mb-4">
-                                <h3><span style="color: red;">R</span>OLE AT <span style="color: red;">
-                                    SIC</span></h3>
-                            </div>
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <!-- Eligeblity Criteria Content -->
-                    <div class="col-12 col-md-8" style="padding: 10px;">
-                        <div class="choose-us-content mb-80">
-                            <div class="section-heading mb-4">
-                                <h3><span style="color: red;">E</span>LIGEBILITY <span style="color: red;">
-                                    C</span>RITERIA </h3>
-                            </div>
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Distinctive Experts That Provide Effortless Expertise</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Enriched Outcomes Enabled By Experienced Professionals</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide-Ranging Thoughts Bread Exceptional Ideas</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Generating Best Results Through Open Communication</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Extensive Marketing Research Generates Valuable Insights</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> We are Results-Driven, Oriented, We deliver results</li>
-                            </ul>
-                        </div>
-                        <!-- Join Form -->
-                    <div class="col-12 col-md-6 col-lg-5">
-                        <div class="nl-form mb-80">
-                            <form action="#" method="post">
-                                <span style="position:absolute; left:10px;">
-        <a
-          href="javascript:void(
-            window.open(
-              'https://form.jotform.com/200492401262443',
-              'blank',
-              'scrollbars=yes,
-              toolbar=no,
-              width=700,
-              height=500'
-            )
-          )
-        ">
-          Online Interview Questionnaire Form
-        </a></span>
-                            </form>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>        </div>
-      </div>
-
-<br/><br/><br/>
-
-
-
-
-
-
-
-      <br/><br/><br/>
-      <div class="container h-100" style="align-text:center;">
+    <div class="container h-100" style="align-text:center;">
         <div class="row h-100 align-items-end">
             <div class="col-12">
                 <div class="breadcumb--con">
-                    <h2 class="title"><span style="color: red;">P</span>ART<span style="color: red;"> T</span>IME <span style="color: red;">I</span>NTERNSHIPS</h2>
+                    <h2 class="title"><span style="color: red;">O</span>FFLINE<span style="color: red;"> T</span>RAININGS</h2>
                    
                 </div>
             </div>
@@ -618,7 +348,7 @@ h4:hover {
 
 <div class="accordion-container">
     <div class="accordion">
-      <h4>INTERNSHIP 1</h4>
+      <h4>OFFLINE TRAINING 1</h4>
       <button><i class="fa fa-chevron-down rotate"></i></button>
     </div>
     <div class="accordion-panel">
@@ -720,7 +450,7 @@ h4:hover {
   
   <div class="accordion-container">
     <div class="accordion">
-      <h4>INTERNSHIP 2</h4>
+      <h4>OFFLINE TRAINING 2</h4>
       <button><i class="fa fa-chevron-down rotate"></i></button>
     </div>
     <div class="accordion-panel">
@@ -830,7 +560,7 @@ h4:hover {
     <button class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <!-- <a href="./services.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">START EXPLORING</a> -->
 
-        <h2 class="title"><span style="color: red;">A</span>LL <span style="color: red;">I</span>NTERNSHIPS & <span style="color: red;">T</span>HEIR <span style="color: red;">T</span>IMELINES</h2>
+        <h2 class="title"><span style="color: red;">A</span>LL <span style="color: red;">O</span>FFLINE <span style="color: red;">T</span>RAINING & <span style="color: red;">T</span>HEIR <span style="color: red;">T</span>IMELINES</h2>
     </button>
   </p>
   <div class="collapse" id="collapseExample">
@@ -1069,9 +799,17 @@ h4:hover {
     <!-- ***** Internship Area End ***** -->
 
     <br>
+    
 
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area section-padding-80-0"style="background-color: #e8fcf7;">
+
+    <!-- ***** Internship Area End ***** -->
+
+    <!-- ***** Newsletter Area Start ***** -->
+    
+    <!-- ***** Newsletter Area End ***** -->
+
+     <!-- ***** Footer Area Start ***** -->
+     <footer class="footer-area section-padding-80-0"style="background-color: #e8fcf7;">
         <div class="container">
             <div class="row justify-content-between">
 
@@ -1167,7 +905,6 @@ h4:hover {
             </div>
           </div>
         </footer>
-
     <!-- ***** Footer Area End ***** -->
 
     <!-- ******* All JS Files ******* -->
